@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+h1 {
+  color: darkred;
+}
+
+img {
+  width: 150px;
+  background-color: white;
+  animation: pulse 2s infinite;
+}
+img:hover {
+  cursor: pointer;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1, 1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
